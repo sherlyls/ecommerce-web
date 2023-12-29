@@ -1,0 +1,17 @@
+{
+  "name": "ecommerce-web",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000e\u0000c\u0000o\u0000m\u0000m\u0000e\u0000r\u0000c\u0000e\u0000-\u0000w\u0000e\u0000b\u0000\r\u0000 \u0000",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3"
+  }
+}
