@@ -5,7 +5,7 @@ import { getProducts, newProduct, getProductDetails, updateProduct, deleteProduc
 router.route("/products").get(getProducts)
 router.route("/admin/products").post(newProduct)
 router.route("/products/:id").get(getProductDetails)
-router.route("/products/:id").post(updateProduct)
+router.route("/products/:id").put(updateProduct)
 router.route("/products/:id").delete(deleteProduct)
 
 export default router
