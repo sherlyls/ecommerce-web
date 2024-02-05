@@ -1,6 +1,6 @@
 import express from  "express"
 const router = express.Router()
-import { getProducts, newProduct, getProductDetails, updateProduct, deleteProduct } from "../controllers/productControllers.js"
+import { deleteProduct, getProductDetails, getProducts, newProduct, updateProduct } from "../controllers/productControllers.js"
 
 router.route("/products").get(getProducts)
 router.route("/admin/products").post(newProduct)

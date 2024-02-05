@@ -13,7 +13,7 @@ process.on("uncaughtException", (err) => {
 
 dotenv.config({ path: 'backend/config/config.env'})
 
-//Connecting to database
+// Connecting to database
 connectDatabase();
 app.use(express.json())
 
@@ -25,7 +25,7 @@ app.use("/api/v1", productRoutes)
 // Using error middleware
 app.use(errorMiddleware)
 
-const server = app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Server started on PORT: ${process.env.PORT} in ${process.env.NODE_ENV} mode`)
 })
 
