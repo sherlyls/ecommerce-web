@@ -18,6 +18,15 @@ export const isAuthenticatedUser = catchAsyncErrors(async (req, res, next) => {
     req.user = await User.findById(decoded.id)
     // console.log(req.user)
 
-
     next()
 })
+
+// Authorize user roles
+export const authorizeRoles = (...roles) => {
+    return (req, res, next) => {
+        if (!roles.includes(req.user.role)) {
+            return next(new ErrorHandler(`Role (${req.user.role}) is not allowed to access thi resource`, 403))
+        }
+        next()
+    }
+}
