@@ -3,8 +3,11 @@ class APIFilters {
         this.query = query;
         this.queryStr = queryStr
     }
+    
 
     search() {
+        console.log(this.query, "this.query")
+        console.log(this.queryStr, "this.queryStr")
         const keyword = this.queryStr.keyword
         ? {
             name: {
