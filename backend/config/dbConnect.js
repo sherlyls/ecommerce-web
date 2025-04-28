@@ -10,3 +10,5 @@ export const connectDatabase = () => {
         console.log(`MoongoDB Database connected with HOST: ${con?.connection?.host}`)
     })
 }
+
+export default connectDatabase
